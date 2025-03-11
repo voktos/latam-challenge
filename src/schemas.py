@@ -10,5 +10,6 @@ class User(Struct):
 
 
 class Tweet(Struct):
+    content: str
     date: str
     user: User
