@@ -51,5 +51,9 @@ def q1_memory(file_path: str) -> List[Tuple[datetime.date, str]]:
             date_counts.items(),
             key=lambda x: x[1],
             reverse=True,
-        )
+        )[
+            :10
+        ]  # This slice is here in case len(date_counts) > 10, wich can
+        # happen if there are multiple dates with the same count and
+        # that count is among the top 10 counts
     ]
