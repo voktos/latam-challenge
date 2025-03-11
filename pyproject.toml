@@ -25,3 +25,5 @@ pyproject-flake8 = "^7.0.0"
 [tool.poetry.group.test.dependencies]
 parameterized = "^0.9.0"
 
+[tool.black]
+line-length = 79
