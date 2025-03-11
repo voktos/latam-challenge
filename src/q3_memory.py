@@ -38,4 +38,6 @@ def q3_memory(file_path: str) -> List[Tuple[str, int]]:
         k: v for k, v in username_counts.items() if v in top_10_counts
     }
 
-    return sorted(username_counts.items(), key=lambda x: x[1], reverse=True)
+    return sorted(username_counts.items(), key=lambda x: x[1], reverse=True)[
+        :10
+    ]  # Same consideration here as in q1_memory
