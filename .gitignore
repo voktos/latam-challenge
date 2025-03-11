@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.cover
+.cache
+.coverage
+.coverage.*
+.ipynb_checkpoints
+.tool-versions
+.venv/
+.vscode/
+coverage.xml
