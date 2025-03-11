@@ -1,0 +1,14 @@
+"""
+Schemas for decoding the JSON file with msgspec.
+"""
+
+from msgspec import Struct
+
+
+class User(Struct):
+    username: str
+
+
+class Tweet(Struct):
+    date: str
+    user: User
